@@ -1,0 +1,18 @@
+server:
+  port: 8055
+spring:
+  application:
+    name: ktv-userset
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ktv?useunicode=true;&characterEncoding=utf8&serverTimezone=UTC&autoReconnect=true
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10099/eureka
+mybatis:
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+swagger:
+  base-package: com.ktv.web.controller

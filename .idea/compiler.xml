@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ktv-auth" />
+        <module name="ktv-registry" />
+        <module name="ktv-userset-service" />
+        <module name="ktv-common" />
+        <module name="ktv-gateway" />
+        <module name="ktv-userset-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ktv-auth" target="1.8" />
+      <module name="ktv-common" target="1.8" />
+      <module name="ktv-gateway" target="1.8" />
+      <module name="ktv-registry" target="1.8" />
+      <module name="ktv-userset" target="1.8" />
+      <module name="ktv-userset-interface" target="1.8" />
+      <module name="ktv-userset-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ktv-auth" options="-parameters" />
+      <module name="ktv-common" options="-parameters" />
+      <module name="ktv-gateway" options="-parameters" />
+      <module name="ktv-registry" options="-parameters" />
+      <module name="ktv-userset-interface" options="-parameters" />
+      <module name="ktv-userset-service" options="-parameters" />
+    </option>
+  </component>
+</project>

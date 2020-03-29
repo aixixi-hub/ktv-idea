@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ktv.mapper.KehuMapper">
+  <resultMap id="BaseResultMap" type="com.ktv.bean.Kehu">
+    <id column="kehu_id" jdbcType="BIGINT" property="kehuId" />
+    <result column="kehu_name" jdbcType="VARCHAR" property="kehuName" />
+    <result column="kehu_level" jdbcType="BIGINT" property="kehuLevel" />
+    <result column="kehu_address" jdbcType="VARCHAR" property="kehuAddress" />
+    <result column="kehu_phone" jdbcType="VARCHAR" property="kehuPhone" />
+    <result column="kehu_creattime" jdbcType="TIMESTAMP" property="kehuCreattime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    kehu_id, kehu_name, kehu_level, kehu_address, kehu_phone, kehu_creattime
+  </sql>
+  <select id="selectByExample" parameterType="com.ktv.bean.KehuExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ktv_kehu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ktv_kehu
+    where kehu_id = #{kehuId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ktv_kehu
+    where kehu_id = #{kehuId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ktv.bean.KehuExample">
+    delete from ktv_kehu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="kehu_id" keyProperty="kehuId" parameterType="com.ktv.bean.Kehu" useGeneratedKeys="true">
+    insert into ktv_kehu (kehu_name, kehu_level, kehu_address, 
+      kehu_phone, kehu_creattime)
+    values (#{kehuName,jdbcType=VARCHAR}, #{kehuLevel,jdbcType=BIGINT}, #{kehuAddress,jdbcType=VARCHAR}, 
+      #{kehuPhone,jdbcType=VARCHAR}, #{kehuCreattime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" keyColumn="kehu_id" keyProperty="kehuId" parameterType="com.ktv.bean.Kehu" useGeneratedKeys="true">
+    insert into ktv_kehu
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="kehuName != null">
+        kehu_name,
+      </if>
+      <if test="kehuLevel != null">
+        kehu_level,
+      </if>
+      <if test="kehuAddress != null">
+        kehu_address,
+      </if>
+      <if test="kehuPhone != null">
+        kehu_phone,
+      </if>
+      <if test="kehuCreattime != null">
+        kehu_creattime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="kehuName != null">
+        #{kehuName,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuLevel != null">
+        #{kehuLevel,jdbcType=BIGINT},
+      </if>
+      <if test="kehuAddress != null">
+        #{kehuAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuPhone != null">
+        #{kehuPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuCreattime != null">
+        #{kehuCreattime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ktv.bean.KehuExample" resultType="java.lang.Long">
+    select count(*) from ktv_kehu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ktv_kehu
+    <set>
+      <if test="record.kehuId != null">
+        kehu_id = #{record.kehuId,jdbcType=BIGINT},
+      </if>
+      <if test="record.kehuName != null">
+        kehu_name = #{record.kehuName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kehuLevel != null">
+        kehu_level = #{record.kehuLevel,jdbcType=BIGINT},
+      </if>
+      <if test="record.kehuAddress != null">
+        kehu_address = #{record.kehuAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kehuPhone != null">
+        kehu_phone = #{record.kehuPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kehuCreattime != null">
+        kehu_creattime = #{record.kehuCreattime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ktv_kehu
+    set kehu_id = #{record.kehuId,jdbcType=BIGINT},
+      kehu_name = #{record.kehuName,jdbcType=VARCHAR},
+      kehu_level = #{record.kehuLevel,jdbcType=BIGINT},
+      kehu_address = #{record.kehuAddress,jdbcType=VARCHAR},
+      kehu_phone = #{record.kehuPhone,jdbcType=VARCHAR},
+      kehu_creattime = #{record.kehuCreattime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ktv.bean.Kehu">
+    update ktv_kehu
+    <set>
+      <if test="kehuName != null">
+        kehu_name = #{kehuName,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuLevel != null">
+        kehu_level = #{kehuLevel,jdbcType=BIGINT},
+      </if>
+      <if test="kehuAddress != null">
+        kehu_address = #{kehuAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuPhone != null">
+        kehu_phone = #{kehuPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuCreattime != null">
+        kehu_creattime = #{kehuCreattime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where kehu_id = #{kehuId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ktv.bean.Kehu">
+    update ktv_kehu
+    set kehu_name = #{kehuName,jdbcType=VARCHAR},
+      kehu_level = #{kehuLevel,jdbcType=BIGINT},
+      kehu_address = #{kehuAddress,jdbcType=VARCHAR},
+      kehu_phone = #{kehuPhone,jdbcType=VARCHAR},
+      kehu_creattime = #{kehuCreattime,jdbcType=TIMESTAMP}
+    where kehu_id = #{kehuId,jdbcType=BIGINT}
+  </update>
+</mapper>

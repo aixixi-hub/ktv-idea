@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistentConfig">
+    <option name="historyConfigList">
+      <map>
+        <entry key="Kehu">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="KehuMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Kehu" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="Kehu" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="kehu_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="Kehu" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv-kehu">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="KehuMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Kehu" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv-kehu" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="kehu_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv-kehu" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv-user">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="UserMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="User" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv-user" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="user_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv-user" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_album">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="AlbumMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Album" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_album" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="albun_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_album" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_collectiom">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="CollectiomMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Collectiom" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_collectiom" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="col_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_collectiom" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_create">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="CreateMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Create" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_create" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="crt_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_create" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_linkman">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="LinkmanMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Linkman" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_linkman" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="lkm_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_linkman" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_singer">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="SingerMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Singer" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_singer" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="singer_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_singer" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_song">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="SongMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Song" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_song" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="song_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_song" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ktv_user">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="UserMapper" />
+              <option name="daoPackage" value="com.ktv.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="User" />
+              <option name="modelPackage" value="com.ktv.bean" />
+              <option name="name" value="ktv_user" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="user_id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/ktv-userset/ktv-userset-interface" />
+              <option name="tableName" value="ktv_user" />
+              <option name="useExample" value="true" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

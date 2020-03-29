@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ktv-auth/ktv-auth.iml" filepath="$PROJECT_DIR$/ktv-auth/ktv-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktv-common/ktv-common.iml" filepath="$PROJECT_DIR$/ktv-common/ktv-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktv-gateway/ktv-gateway.iml" filepath="$PROJECT_DIR$/ktv-gateway/ktv-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktv-registry/ktv-registry.iml" filepath="$PROJECT_DIR$/ktv-registry/ktv-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktv-userset/ktv-userset.iml" filepath="$PROJECT_DIR$/ktv-userset/ktv-userset.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktv-userset/ktv-userset-interface/ktv-userset-interface.iml" filepath="$PROJECT_DIR$/ktv-userset/ktv-userset-interface/ktv-userset-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktv-userset/ktv-userset-service/ktv-userset-service.iml" filepath="$PROJECT_DIR$/ktv-userset/ktv-userset-service/ktv-userset-service.iml" />
+    </modules>
+  </component>
+</project>
